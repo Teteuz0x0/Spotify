@@ -90,6 +90,11 @@ nav {
     border: 2px solid #fff;
 }
 
+.bnt-hidden{
+    visibility: hidden;
+    display: block;
+}
+
 .carousel-control-next, .carousel-control-prev {
 	width: 5%;
 }
@@ -207,17 +212,17 @@ footer .icon{
 /* media query */
 
 /* Extra small */
-@media (max-width: 576px) {
+@media (min-width: 280px) {
     h1 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     h2 {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
 
     h3 {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     p {
@@ -227,7 +232,28 @@ footer .icon{
     .btn-custom {
         font-size: 0.7em;
     }
+
 }
+
+@media (min-width: 486px){
+    .bnt-hidden{
+        display: none;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.9em;
+    }
+
+    h3 {
+        font-size: 1.7em;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
 
 /* Small */
 @media (min-width: 576px) {
@@ -237,6 +263,10 @@ footer .icon{
 
     .btn-custom {
         font-size: 1em;
+    }
+
+    .bnt-hidden{
+        display: block;
     }
 }
 
@@ -256,6 +286,10 @@ footer .icon{
 
     .nav-link{
         font-size: 1.2em;
+    }
+
+    .bnt-hidden{
+        display: none;
     }
 }
 
